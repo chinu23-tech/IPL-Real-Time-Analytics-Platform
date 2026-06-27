@@ -1,0 +1,12 @@
+{{ config(materialized='table') }}
+
+SELECT
+    BATTER,
+    SUM(RUNS_TOTAL) AS TOTAL_RUNS,
+    COUNT(*) AS BALLS_FACED,
+    ROUND(
+        SUM(RUNS_TOTAL) * 100.0 / COUNT(*),
+        2
+    ) AS STRIKE_RATE
+FROM CRICKET_DB.SILVER.IPL_BALLS
+GROUP BY BATTER

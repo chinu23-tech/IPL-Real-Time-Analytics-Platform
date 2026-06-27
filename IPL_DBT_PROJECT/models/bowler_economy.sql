@@ -1,0 +1,12 @@
+{{ config(materialized='table') }}
+
+SELECT
+    BOWLER,
+    SUM(RUNS_TOTAL) AS RUNS_CONCEDED,
+    COUNT(*) / 6.0 AS OVERS_BOWLED,
+    ROUND(
+        SUM(RUNS_TOTAL) / NULLIF(COUNT(*) / 6.0, 0),
+        2
+    ) AS ECONOMY
+FROM CRICKET_DB.SILVER.IPL_BALLS
+GROUP BY BOWLER
