@@ -1,4 +1,12 @@
 # 🏏 IPL Real-Time Analytics Platform
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![Kafka](https://img.shields.io/badge/Apache-Kafka-black?logo=apachekafka)
+![Redpanda](https://img.shields.io/badge/Redpanda-Streaming-red)
+![Snowflake](https://img.shields.io/badge/Snowflake-Cloud-blue?logo=snowflake)
+![Snowpark](https://img.shields.io/badge/Snowpark-Python-blue)
+![dbt](https://img.shields.io/badge/dbt-Analytics-orange?logo=dbt)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?logo=streamlit)
+![SQL](https://img.shields.io/badge/SQL-Snowflake-blue)
 
 A real-time IPL analytics platform that simulates live cricket matches using **Kafka**, **Redpanda**, **Snowflake**, **dbt**, **Snowpark**, and **Streamlit**.
 
