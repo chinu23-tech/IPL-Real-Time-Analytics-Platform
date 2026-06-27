@@ -64,34 +64,20 @@ IPL-Real-Time-Analytics-Platform/
 
 ---
 
-## ⚙️ Architecture
 
-```
-IPL Match Simulation
-        │
-        ▼
-Kafka Producer
-        │
-        ▼
-Redpanda
-        │
-        ▼
-Kafka Consumer
-        │
-        ▼
-Snowflake Tables
-        │
-        ▼
-dbt Models
-        │
-        ▼
-Snowpark Processing
-        │
-        ▼
-Streamlit Dashboard
-```
+## 🏗️ System Architecture
 
----
+```mermaid
+flowchart LR
+    A[IPL Match Simulator] --> B[Kafka Producer]
+    B --> C[Redpanda]
+    C --> D[Kafka Consumer]
+    D --> E[Snowflake Raw Tables]
+    E --> F[dbt Transformations]
+    F --> G[Snowpark Analytics]
+    G --> H[Gold Layer Views]
+    H --> I[Streamlit Dashboard]
+```
 
 ## 📊 Dashboard Features
 
