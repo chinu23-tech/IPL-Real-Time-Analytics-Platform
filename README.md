@@ -78,6 +78,38 @@ flowchart LR
     G --> H[Gold Layer Views]
     H --> I[Streamlit Dashboard]
 ```
+## 🔄 Project Workflow
+
+```text
+IPL Match Simulation
+        │
+        ▼
+Generate Ball-by-Ball Events
+        │
+        ▼
+Kafka Producer
+        │
+        ▼
+Redpanda Streaming
+        │
+        ▼
+Kafka Consumer
+        │
+        ▼
+Snowflake Raw Layer
+        │
+        ▼
+dbt Models
+        │
+        ▼
+Snowpark Processing
+        │
+        ▼
+Gold Analytics Views
+        │
+        ▼
+Streamlit Dashboard
+```
 
 ## 📊 Dashboard Features
 
@@ -111,6 +143,19 @@ flowchart LR
 5. Run Streamlit Dashboard
 
 ---
+## 🌟 Key Highlights
+
+- Simulated complete IPL season with real-time ball-by-ball streaming.
+- Kafka event streaming using Redpanda.
+- Snowflake as cloud data warehouse.
+- dbt transformations for analytics-ready data.
+- Snowpark for data processing.
+- Interactive Streamlit dashboard with auto-refresh.
+- Dynamic Points Table.
+- Live Orange Cap and Purple Cap.
+- Playoff qualification tracking.
+- Champion prediction.
+- Match analytics and player statistics.
 
 ## 👨‍💻 Author
 
