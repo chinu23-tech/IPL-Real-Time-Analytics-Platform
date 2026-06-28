@@ -6,10 +6,10 @@ from kafka import KafkaProducer
 # CONFIGURATION
 # ==========================================
 
-BALL_DELAY = 2          # seconds between every ball
-OVER_DELAY = 8          # seconds after every over
-INNINGS_DELAY = 20      # innings break
-MATCH_DELAY = 30        # break between matches
+BALL_DELAY = 0.1         # seconds between every ball
+OVER_DELAY = 0.5        # seconds after every over
+INNINGS_DELAY = 2.0     # innings break
+MATCH_DELAY = 3.0        # break between matches
 
 # ==========================================
 # KAFKA PRODUCER

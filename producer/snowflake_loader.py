@@ -55,6 +55,7 @@ cursor.executemany(
         OVER_NO,
         BALL_NO,
         STRIKER,
+        NON_STRIKER,
         BOWLER,
         RUNS,
         SCORE,
@@ -64,14 +65,13 @@ cursor.executemany(
     )
     VALUES
     (
-        %s,%s,%s,%s,%s,
-        %s,%s,%s,%s,%s,
-        %s,%s,%s
+        ?, ?, ?, ?, ?,
+        ?, ?, ?, ?, ?,
+        ?, ?, ?, ?
     )
     """,
     rows
 )
-
 conn.commit()
 
 print(f"Loaded {len(rows)} events")
